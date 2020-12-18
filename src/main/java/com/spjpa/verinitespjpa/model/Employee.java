@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
-import com.sun.istack.NotNull;
+
 
 import lombok.Getter;
 import lombok.Setter;
@@ -21,7 +21,7 @@ public class Employee {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
-	@NotNull
+
 	private String firstName;
 	private String lastName;
 	@Column(name="emp_city")
